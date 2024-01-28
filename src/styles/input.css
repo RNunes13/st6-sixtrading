@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1f2224;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+header:not(.header-scrolled) {
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.padding-left {
+  padding-left: calc((100vw - 1280px) / 2) !important;
+}
+
+.accordion-text {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+.accordion-active > .accordion-text {
+  max-height: fit-content;
+  overflow: visible;
+  opacity: 1;
+}
+
+.accordion-button {
+  column-gap: 12px;
+}
+
+.accordion-button-icon {
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.accordion-active .accordion-button-icon {
+  rotate: 90deg;
+}
+
+.header-scrolled {
+  background-color: rgb(23, 25, 26) !important;
+}
+
+.swiper-ganhos .swiper-slide,
+.swiper-indicadores .swiper-slide,
+.swiper-estrategias .swiper-slide {
+  transition-property: -webkit-filter, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.swiper-estrategias .swiper-slide img {
+  margin: 0 auto;
+}
+
+.mobile-tabs button {
+  flex-shrink: 0;
+}
+
+.swiper-ganhos .swiper-slide:not(.swiper-slide-active),
+.swiper-indicadores .swiper-slide:not(.swiper-slide-active),
+.swiper-estrategias .swiper-slide:not(.swiper-slide-active) {
+  filter: blur(7px) grayscale(90%);
+  transform: scale(0.8);
+
+  @media screen and (max-width: 1020px) {
+    transform: scale(0.9);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
