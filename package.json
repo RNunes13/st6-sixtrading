@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve --mode=development --open",
-    "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/styles.css --minify",
+    "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --minify",
     "build": "export NODE_ENV=production && webpack && npm run build:css"
   },
   "devDependencies": {

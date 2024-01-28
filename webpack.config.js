@@ -22,12 +22,7 @@ module.exports = {
             presets: ["@babel/preset-env"],
           },
         },
-      },
-      {
-        test: /\.css$/i,
-        include: path.resolve(__dirname, "src/styles/output.css"),
-        use: ["style-loader", "css-loader", "postcss-loader"],
-      },
+      }
     ],
   },
   plugins: [

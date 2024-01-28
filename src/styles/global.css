@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,12 +93,58 @@ header:not(.header-scrolled) {
   }
 }
 
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+.privacy p,
+.terms p:not(.terms-title) {
+  margin-bottom: 10px;
+}
+
+.privacy ul,
+.terms ul {
+  margin: 12px 0 10px 10px;
+  padding-left: 12px;
+  list-style: disc;
+}
+
+.privacy ul li,
+.terms ul li {
+  margin-top: 10px;
+}
+
+.privacy a,
+.terms a {
+  color: #008bdb;
+}
+
+.privacy-subtitle {
+  font-weight: 700;
+  margin: 24px 0 10px;
+}
+
+.privacy table {
+  border-collapse: collapse;
+}
+
+.privacy td {
+  border: 0px solid transparent;
+  background-clip: padding-box;
+}
+
+.privacy tr > td + td {
+  border-left-width: 20px;
+}
+
+.terms-title {
+  margin: 36px 0 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.terms-title {
+  margin: 36px 0 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.terms-ordered {
+  text-indent: 16px;
 }
