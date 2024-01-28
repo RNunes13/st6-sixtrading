@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinamento ST6 | Six Trading</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qrl2xze.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header
+      id="header"
+      class="fixed top-0 w-full h-[72px] z-[999] transition-all bg-BLACK px-4"
+    >
+      <div class="container h-full flex items-center justify-between">
+        <div>
+          <a href="/">
+            <img src="./assets/LOGO_ST6.svg" alt="ST6" />
+          </a>
+        </div>
+
+        <button id="menu-btn" class="flex items-center lg:hidden">
+          <iconify-icon
+            icon="bx:menu"
+            width="32"
+            height="32"
+            style="color: white"
+          ></iconify-icon>
+        </button>
+
+        <div
+          id="menu-nav"
+          class="flex items-center gap-4 flex-col w-full absolute top-[72px] right-0 left-0 p-6 pb-8 bg-BLACK hidden lg:bg-transparent lg:static lg:flex-row lg:w-auto lg:p-0 lg:flex"
+        >
+          <ul class="flex items-center gap-6 flex-col lg:flex-row">
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#hero"
+                >Ínicio</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#about"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#methodology"
+                >Metodologia</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#plan"
+                >O Plano</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#bonus"
+                >Bônus</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#mentor"
+                >Mentor</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-proximaNova font-medium text-body14 text-GRAY_300"
+                href="#faq"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+          <nav class="flex items-center gap-4 flex-col lg:flex-row">
+            <a
+              class="px-4 py-2 bg-GRAY_800 rounded-lg font-proximaNova font-semibold text-WHITE"
+              href=""
+              >Já sou ST6</a
+            >
+            <a
+              class="px-4 py-2 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
+              href=""
+              >Entrar para o ST6</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="bg-hero-pattern bg-cover bg-no-repeat bg-right pt-[4.5rem] h-[100vh] min-h-[43.75rem]"
+      >
+        <div class="container flex justify-between items-center h-full">
+          <div
+            class="grow shrink-0 max-w-full text-center lg:max-w-[486px] lg:text-left"
+          >
+            <div class="flex items-center flex-col lg:items-start">
+              <span
+                class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
+                >Do absoluto zero à consistência de lucros com Day Trade!</span
+              >
+              <h1
+                class="font-proximaNova text-WHITE text-head32 lg:text-head48 font-semibold leading-tight mt-4"
+              >
+                Saiba como se tornar um Special Trader 6
+              </h1>
+              <p
+                class="font-proximaNova text-body14 lg:text-body16 text-WHITE leading-normal mt-6 max-w-[416px]"
+              >
+                Descubra o Método Exclusivo que Transforma Operadores Iniciantes
+                em Special Traders 6.
+              </p>
+            </div>
+            <div class="mt-16 flex items-center flex-col w-full lg:items-start">
+              <a
+                class="flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE max-w-[280px] w-full"
+                href=""
+              >
+                Entrar para o ST6
+                <iconify-icon
+                  class="opacity-40"
+                  icon="bx:right-arrow-alt"
+                ></iconify-icon>
+              </a>
+            </div>
+            <a
+              class="gap-4 mt-20 flex items-center justify-center lg:justify-start"
+              href="#about"
+            >
+              <div
+                class="h-8 w-8 rounded-full border-[1px] border-GRAY_300 grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-white"
+                  icon="bx:down-arrow-alt"
+                ></iconify-icon>
+              </div>
+              <p class="font-proximaNova text-GRAY_300 text-body14 font-medium">
+                Deslize para baixo e descubra mais.
+              </p>
+            </a>
+          </div>
+          <div
+            class="max-w-[590px] w-full h-[350px] rounded-2xl hidden lg:block"
+          >
+            <iframe
+              id="hero-video"
+              class="hidden"
+              width="590"
+              height="350"
+              data-src="https://www.youtube.com/embed/eLIcD9v1epU?si=f8Bn4XICIuAhj_HO&controls=0&autoplay=1&rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="autoplay; encrypted-media; gyroscope; picture-in-picture;"
+              allowfullscreen
+            ></iframe>
+
+            <img
+              id="hero-video-placeholder"
+              src="/assets/hero-video-placeholder.png"
+              alt="video placeholder"
+              class="cursor-pointer"
+            />
+            <p
+              class="font-proximaNova text-white text-body14 font-medium pt-3 text-center"
+            >
+              Assista à Apresentação em Vídeo
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-BLACK pt-[5rem] lg:pt-[8.125rem]">
+        <div class="container flex flex-col gap-8 lg:flex-row">
+          <div
+            class="w-full lg:max-w-[384px] flex flex-col items-center text-center lg:items-start lg:text-left"
+          >
+            <div
+              class="h-[48px] w-[48px] lg:h-[72px] lg:w-[72px] rounded-full grid place-content-center border-2 border-BLUE_500"
+            >
+              <iconify-icon
+                class="text-sub32 text-BLUE_500"
+                icon="bx:down-arrow-alt"
+              ></iconify-icon>
+            </div>
+            <h1
+              class="font-proximaNova text-WHITE text-head32 lg:text-head48 font-semibold max-w-[486px] leading-tight mt-8"
+            >
+              A elite da Bolsa <br />
+              de Valores
+            </h1>
+            <a
+              class="hidden lg:inline-flex items-center justify-center gap-6 p-6 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE mt-16 md:max-w-[18.125rem] w-full"
+              href=""
+            >
+              <iconify-icon
+                class="opacity-40"
+                icon="bx:right-arrow-alt"
+              ></iconify-icon>
+              Torne-se um ST6 agora
+            </a>
+          </div>
+          <div
+            class="w-full flex flex-col gap-12 items-center text-center lg:items-start lg:text-left"
+          >
+            <p
+              class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
+            >
+              O ST6 foi criado com base na filosofia Navy Seals, a força de
+              elite da marinha norte americana. A sigla SEAL (Sea), Ar (Air) e
+              Terra (Land) indica que se adaptam a qualquer ambiente.
+            </p>
+            <p
+              class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
+            >
+              Os comandos Seals são numerados de um a cinco e de sete a dez.
+              <strong>A equipe de número 6</strong>, considerada a elite da
+              elite, <strong>é a mais secreta e cobiçada</strong>. Quando a
+              marinha norte americana envia a sua elite, ela envia os Seals.
+              Quando os Seals enviam a sua elite, eles enviam o
+              <strong>Seal Team 6</strong>. A unidade passa pelo treinamento
+              mais poderoso do mundo, desenvolvendo a força mental e tática.
+            </p>
+            <p
+              class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
+            >
+              Na bolsa de valores também encontramos aqueles que estão
+              preparados para operar em qualquer ambiente, seja com o mercado em
+              queda ou o mundo em crise. Esse operador passa por um treinamento
+              de elite rigoroso e tem habilidade para se adaptar com facilidade
+              ao mercado.
+            </p>
+            <p
+              class="max-w-[696px] w-full font-proximaNova text-white font-semibold text-head24 leading-normal"
+            >
+              Eu chamo esse operador de
+              <span class="text-RED_NAVY">Special Trader 6.</span>
+            </p>
+
+            <a
+              class="inline-flex items-center justify-center gap-6 p-6 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE mt-10 md:max-w-[18.125rem] lg:hidden"
+              href=""
+            >
+              <iconify-icon
+                class="opacity-40"
+                icon="bx:right-arrow-alt"
+              ></iconify-icon>
+              Torne-se um ST6 agora
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="methodology" class="w-full py-[80px] lg:py-[130px] bg-BLACK">
+        <div class="container">
+          <p class="font-proximaNova font-semibold text-BLUE_500 text-head24">
+            Uma metodologia única para aprender e aplicar.
+          </p>
+
+          <div class="swiper w-full h-full mt-12">
+            <div class="swiper-wrapper h-[412px] z-50">
+              <div
+                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
+              >
+                <div>
+                  <div
+                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
+                  >
+                    <iconify-icon
+                      class="text-white text-head24"
+                      icon="bx:slideshow"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
+                  >
+                    Conteúdo
+                  </p>
+                </div>
+                <div class="flex-1">
+                  <p
+                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
+                  >
+                    O nosso foco é o Day Trade. Aqui você vai aprender tudo o
+                    que precisa para evoluir e descobrir o seu verdadeiro
+                    potencial como Trader. Além disso, vai receber treinamento
+                    de Swing Trade e Opções de ações.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
+              >
+                <div>
+                  <div
+                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
+                  >
+                    <iconify-icon
+                      class="text-white text-head24"
+                      icon="bx:pie-chart-alt-2"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
+                  >
+                    Sistema de Gestão
+                  </p>
+                </div>
+                <div class="flex-1">
+                  <p
+                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
+                  >
+                    Você terá acesso a TradingPro, a plataforma Número 1 da
+                    América Latina de planejamento, organização e análise
+                    aprofundada de desempenho.
+                  </p>
+                  <img
+                    class="mt-4"
+                    src="./assets/LOGO_TRADINGPRO_MONO.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
+              >
+                <div>
+                  <div
+                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
+                  >
+                    <iconify-icon
+                      class="text-white text-head24"
+                      icon="bx:extension"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
+                  >
+                    Automação
+                  </p>
+                </div>
+                <div class="">
+                  <p
+                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
+                  >
+                    Você vai descobrir um novo mundo para operações de Day Trade
+                    e ter a oportunidade de experimentar estratégias
+                    automatizadas vitoriosas ao longo do tempo.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
+              >
+                <div>
+                  <div
+                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
+                  >
+                    <iconify-icon
+                      class="text-white text-head24"
+                      icon="bx:globe"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
+                  >
+                    Indicadores Premium
+                  </p>
+                </div>
+                <div class="">
+                  <p
+                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
+                  >
+                    Você vai receber indicadores especiais capazes de
+                    transformar os seus resultados rapidamente. São ferramentas
+                    que otimizam a análise, deixam tudo mais simples e aumentam
+                    a precisão dos seus trades.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLUE_700 pt-[5rem] lg:pt-[120px]">
+        <div class="container">
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
+              >tomada de ação para o sucesso</span
+            >
+            <h3
+              class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[606px] mt-4"
+            >
+              A todo momento, você é bombardeado por anúncios como
+            </h3>
+          </div>
+          <div
+            class="w-full max-w-[864px] mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start mt-12"
+          >
+            <div
+              class="flex lg:flex-col justify-center gap-16 flex-wrap lg:max-w-[312px] mb-[50px]"
+            >
+              <div
+                class="flex flex-col basis-[320px] lg:basis-full gap-6 w-full"
+              >
+                <iconify-icon
+                  class="text-BLUE_500 text-head32"
+                  icon="fontisto:quote-left"
+                ></iconify-icon>
+                <p
+                  class="text-start font-proximaNova text-white text-body16 font-medium"
+                >
+                  “Nada do que você viu até hoje sobre Day Trade funciona,
+                  apenas o meu operacional é lucrativo.”
+                </p>
+              </div>
+              <div
+                class="flex flex-col basis-[320px] lg:basis-full gap-6 max-w-[312px]"
+              >
+                <iconify-icon
+                  class="text-BLUE_500 text-head32"
+                  icon="fontisto:quote-left"
+                ></iconify-icon>
+                <p
+                  class="text-start font-proximaNova text-white text-body16 font-medium"
+                >
+                  “Rasgue este livro de análise técnica que não serve para nada
+                  e compre o meu curso.”
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="max-w-[416px] w-full flex flex-col gap-8 items-center lg:items-start"
+            >
+              <p
+                class="w-full font-proximaNova text-white font-normal text-body18 leading-normal"
+              >
+                O ST6 vai na contramão desses falsos gurus, pois técnicas de
+                diferentes filosofias de trading funcionam; a questão é
+                descobrir o que se encaixa melhor para o seu perfil.
+              </p>
+              <p
+                class="w-full font-proximaNova text-white font-normal text-body18 leading-normal"
+              >
+                Esse deve ser o papel de um mentor de verdade: fornecer
+                direcionamento, clareza nas decisões e ajudar você a descobrir o
+                que funciona melhor para o seu perfil.
+              </p>
+
+              <div
+                class="h-8 w-8 rounded-full border-[1px] border-BLUE_500 grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-BLUE_500"
+                  icon="bx:down-arrow-alt"
+                ></iconify-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLUE_700 py-[2.5rem] lg:py-[120px]">
+        <div class="container pb-[148px]">
+          <div class="flex flex-col items-center justify-center">
+            <h3
+              class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[416px] mt-4"
+            >
+              Por isso, <span class="text-BLUE_500">você tem duas opções.</span>
+            </h3>
+          </div>
+          <div
+            class="w-full max-w-[800px] gap-8 mx-auto flex items-center lg:items-stretch mt-12 flex-col lg:flex-row"
+          >
+            <div
+              class="w-full p-8 flex flex-col gap-4 border-[1px] border-BLUE_600 rounded-lg max-w-[400px]"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="font-proximaNova font-semibold text-body18 text-BLUE_500"
+                  >1.</span
+                >
+                <p
+                  class="font-proximaNova font-semibold text-white text-body18 uppercase"
+                >
+                  PRIMEIRA OPÇÃO
+                </p>
+              </div>
+              <p class="font-proximaNova font-semibold text-body16 text-white">
+                Continuar fazendo as mesmas coisas sem clareza de como melhorar
+                e esperar resultados diferentes.
+              </p>
+            </div>
+            <div
+              class="w-full p-8 flex flex-col gap-4 border-[1px] border-BLUE_600 rounded-lg max-w-[400px]"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="font-proximaNova font-semibold text-body18 text-BLUE_500"
+                  >2.</span
+                >
+                <p
+                  class="font-proximaNova font-semibold text-white text-body18 uppercase"
+                >
+                  SEGUNDA OPÇÃO
+                </p>
+              </div>
+              <p class="font-proximaNova font-semibold text-body16 text-white">
+                Caminhar ao lado de um ST6, descobrir o operacional que funciona
+                para você e mudar de patamar financeiro para sempre com Day
+                Trade.
+              </p>
+            </div>
+          </div>
+
+          <div class="max-w-[448px] w-full mx-auto mt-16">
+            <p
+              class="text-center font-proximaNova text-white text-body18 font-medium"
+            >
+              Se você se decidiu e quer ver
+              <span class="text-BLUE_500">mudanças positivas</span> na sua
+              Jornada Trader. Já temos sua resposta,
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="plan"
+        class="bg-BLUE_700 w-full py-[80px] lg:pt-[120px] lg:pt-[100px]"
+      >
+        <div class="container w-full">
+          <div class="flex flex-col items-center lg:items-start">
+            <span class="text-BLUE_500 uppercase font-proximaNova font-semibold"
+              >nossas etapas</span
+            >
+            <h3
+              class="max-w-[424px] font-proximaNova font-semibold text-white text-head40"
+            >
+              O PLANO ST6
+            </h3>
+            <p class="font-proximaNova font-medium text-white text-body18 mt-3">
+              Um plano prático desenvolvido para formar a Equipe 6 da Bolsa de
+              Valores.
+            </p>
+          </div>
+          <div
+            class="mt-16 flex flex-col lg:flex-row items-start justify-between"
+          >
+            <div
+              id="mobile-tabs"
+              class="mobile-tabs flex lg:hidden lg:flex-col gap-6 lg:max-w-[448px] w-full overflow-x-auto no-scrollbar mb-6"
+            ></div>
+
+            <div
+              id="tabs"
+              class="hidden lg:flex lg:flex-col gap-6 lg:max-w-[448px] w-full"
+            ></div>
+
+            <div class="w-full flex justify-center items-center h-full">
+              <div id="tab-content" class="max-w-[548px] w-full">
+                <span
+                  id="number-reference-step"
+                  class="font-proximaNova font-semibold text-head64 text-BLUE_500"
+                  >1.</span
+                >
+                <h3
+                  id="title-reference-step"
+                  class="font-proximaNova font-semibold text-head40 text-white mt-6"
+                >
+                  Idealização
+                </h3>
+                <p
+                  id="text-reference-step"
+                  class="font-proximaNova font-normal text-body20 text-white mt-4"
+                >
+                  Se você não sabe para onde vai qualquer caminho serve. E você
+                  não quer chegar a um destino que lhe traga prejuízos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLUE_700 py-[80px] lg:pt-[100px] lg:pb-[120px]">
+        <div class="w-full container">
+          <div class="flex flex-col items-center max-w-[664px] mx-auto">
+            <p
+              class="font-proximaNova font-bold text-head24 text-white text-center"
+            >
+              Com ST6 você vai saber exatamente onde entrar e sair das operações
+              de acordo com o seu perfil operacional.
+            </p>
+            <p class="font-proximaNova font-medium text-body16 text-white mt-6">
+              Se você está começando do zero no Day Trade e sofre por um dos
+              motivos abaixo:
+            </p>
+          </div>
+
+          <div class="max-w-[800px] mx-auto w-full flex flex-col gap-4 mt-12">
+            <div
+              class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+            >
+              <iconify-icon
+                class="text-RED_500 text-body18"
+                icon="foundation:x"
+              ></iconify-icon>
+              <p class="font-proximaNova text-body18 text-white font-medium">
+                Não conhece as melhores estratégias para o seu perfil
+              </p>
+            </div>
+            <div
+              class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+            >
+              <iconify-icon
+                class="text-RED_500 text-body18"
+                icon="foundation:x"
+              ></iconify-icon>
+              <p class="font-proximaNova text-body18 text-white font-medium">
+                Perde mais do que ganha e não sabe como melhorarl
+              </p>
+            </div>
+            <div
+              class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+            >
+              <iconify-icon
+                class="text-RED_500 text-body18"
+                icon="foundation:x"
+              ></iconify-icon>
+              <p class="font-proximaNova text-body18 text-white font-medium">
+                Sente insegurança para abrir e fechar um trade
+              </p>
+            </div>
+            <div
+              class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+            >
+              <iconify-icon
+                class="text-RED_500 text-body18"
+                icon="foundation:x"
+              ></iconify-icon>
+              <p class="font-proximaNova text-body18 text-white font-medium">
+                Fica com muita ansiedade
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center items-center mt-[112px]">
+            <p
+              class="text-head32 lg:text-head40 font-proximaNova font-semibold text-WHITE py-4 border-b-2 border-BLUE_500 text-center"
+            >
+              Então o <span class="text-BLUE_500">ST6</span> é para você!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLACK w-full py-[80px]">
+        <div class="container w-full">
+          <div class="max-w-[762px] mx-auto flex flex-col items-center gap-6">
+            <h3
+              class="text-center max-w-[510px] font-proximaNova font-semibold text-white text-head32 lg:text-head40"
+            >
+              Estratégias fáceis de aplicar, Lucros consistentes
+            </h3>
+            <p
+              class="text-center font-proximaNova font-medium text-white text-head24"
+            >
+              Veja o tipo de lucro que você pode ter com consistência a partir
+              do momento que você aplica estratégias certeiras, com o
+              gerenciamento correto e com a mentalidade de um Special Trader
+              6...
+            </p>
+          </div>
+          <div class="mt-[84px]">
+            <div class="swiper-ganhos container overflow-hidden pt-12">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-2.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-3.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-4.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-5.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-6.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-7.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-8.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-9.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/ganhos-e-agradecimentos-10.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-8 mt-10">
+              <div class="flex items-center gap-2">
+                <button
+                  class="swiper-button-prev-ganhos p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    rotate="180deg"
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+                <button
+                  class="swiper-button-next-ganhos p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center mt-16">
+              <h5
+                class="text-center max-w-[424px] font-proximaNova font-semibold text-white text-head32"
+              >
+                Para ter lucros e resultados assim você
+                <span class="text-RED_500">não precisa:</span>
+              </h5>
+
+              <div
+                class="flex flex-col md:flex-row justify-center gap-8 mt-12 w-full"
+              >
+                <div class="md:max-w-[274px] w-full flex flex-col gap-8">
+                  <div
+                    class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+                  >
+                    <iconify-icon
+                      class="text-RED_500 text-body18"
+                      icon="foundation:x"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova text-body18 text-white font-medium"
+                    >
+                      De muito tempo
+                    </p>
+                  </div>
+                  <div
+                    class="px-6 py-4 rounded-lg border-2 border-RED_500 bg-RED_500 bg-opacity-10 flex items-center gap-4"
+                  >
+                    <iconify-icon
+                      class="text-RED_500 text-body18"
+                      icon="foundation:x"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova text-body18 text-white font-medium"
+                    >
+                      De muito DINHEIRO
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                  <div
+                    class="px-6 py-4 rounded-lg border-2 border-EMERALD_500 bg-EMERALD_500 bg-opacity-10 flex items-center gap-4"
+                  >
+                    <iconify-icon
+                      class="text-EMERALD_500 text-body18"
+                      icon="mdi:check-bold"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova text-body18 text-white font-medium"
+                    >
+                      Reserve apenas alguns minutos do seu dia
+                    </p>
+                  </div>
+                  <div
+                    class="px-6 py-4 rounded-lg border-2 border-EMERALD_500 bg-EMERALD_500 bg-opacity-10 flex items-center gap-4"
+                  >
+                    <iconify-icon
+                      class="text-EMERALD_500 text-body18"
+                      icon="mdi:check-bold"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova text-body18 text-white font-medium"
+                    >
+                      Com R$ 500 você já pode começar
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLACK w-full py-[80px]">
+        <div class="container mx-auto w-full">
+          <div class="max-w-[762px] mx-auto flex flex-col items-center gap-6">
+            <span
+              class="uppercase text-BLUE_500 font-proximaNova font-semibold text-body14"
+              >AULAS DO TREINAMENTO</span
+            >
+            <h3
+              class="text-center max-w-[424px] font-proximaNova font-semibold text-white text-head32 lg:text-head40"
+            >
+              Estas aulas e muito mais estão no ST6
+            </h3>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row gap-10 justify-center lg:justify-between items-center lg:items-start mt-16"
+          >
+            <div class="max-w-[690px] w-full lg:h-[400px] rounded-lg">
+              <img
+                src="/assets/hero-video-placeholder.png"
+                alt="video placeholder"
+                class="w-full"
+              />
+            </div>
+
+            <div class="relative max-w-[384px] w-full">
+              <div
+                class="absolute bottom-0 right-0 bg-gradient-to-t from-BLACK to-transparent w-full h-[164px] z-50"
+              ></div>
+              <div class="flex flex-col gap-6 w-full">
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      Vídeo de instrudução a ST6
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      Introdução a Bolsa de Valores
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      O código
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      Os seus direitos
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      Principais índices de mercado
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      O gráfico que funciona para você
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 bg-GRAY_400 rounded-lg border border-GRAY_500"
+                >
+                  <div class="flex items-center gap-4">
+                    <iconify-icon
+                      class="text-white text-body18"
+                      icon="bx:play"
+                    ></iconify-icon>
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      Teoria de Dow
+                    </p>
+                  </div>
+                  <iconify-icon
+                    class="text-white text-body16 opacity-40"
+                    icon="bx:lock-alt"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex justify-between items-center py-3 px-4 rounded-lg"
+                >
+                  <div class="flex items-center gap-4">
+                    <p
+                      class="font-proximaNova font-semibold text-white text-body16"
+                    >
+                      e muitas outras...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between mt-16"
+          >
+            <div
+              class="flex flex-col items-center lg:items-start text-center lg:text-left"
+            >
+              <p
+                class="font-proximaNova font-semibold uppercase text-body14 text-GRAY_300 bg-GRAY_500 px-4 py-2 inline-block rounded-3xl"
+              >
+                ADQUIRA O TREINAMENTO
+              </p>
+              <h4
+                class="font-proximaNova font-semibold text-white text-head24 max-w-[412px] mt-4"
+              >
+                Desbloqueie todas as aulas restantes e torne-se um Special
+                Trader 6
+              </h4>
+            </div>
+            <div class="mt-10 lg:mt-0">
+              <a
+                class="max-w-[278px] w-full flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
+                href=""
+              >
+                Adquirir treinamento
+                <iconify-icon
+                  class="opacity-40"
+                  icon="bx:right-arrow-alt"
+                ></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="bonus"
+        class="bg-gradient-to-tr from-BLUE_DARK_TRADINGPRO to-BLUE_TRADINGPRO py-[80px] lg:py-[100px]"
+      >
+        <div class="container w-full">
+          <div class="max-w-[762px] mx-auto flex flex-col items-center gap-6">
+            <span
+              class="bg-white py-1 px-3 rounded-2xl font-proximaNova font-semibold text-black"
+              >BONÚS PROMOCIONAL</span
+            >
+            <h3
+              class="text-center max-w-[424px] font-proximaNova font-semibold text-white text-head40"
+            >
+              Você ainda vai receber
+            </h3>
+          </div>
+
+          <div class="mt-[48px] flex justify-between items-center">
+            <div class="w-full">
+              <a
+                class="flex items-center justify-center lg:justify-start"
+                target="_blank"
+                href="https://tradingpro.com.br/"
+              >
+                <img
+                  class="w-[148px]"
+                  src="./assets/LOGO_TRADINGPRO_MONO.svg"
+                  alt="TradingPro"
+                />
+              </a>
+              <div
+                class="flex flex-col lg:flex-row items-center gap-3 lg:gap-8 mt-8 justify-center lg:justify-start"
+              >
+                <span class="font-proximaNova uppercase text-white"
+                  >BONÚS PROMOCIONAL</span
+                >
+                <span
+                  class="bg-[#1CA164] py-1 px-3 rounded-2xl font-proximaNova font-semibold text-white uppercase text-center"
+                  >assine a st6 e receba sem custos</span
+                >
+              </div>
+
+              <div
+                class="mt-6 flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
+              >
+                <h4
+                  class="max-w-[424px] leading-tight font-proximaNova font-semibold text-white text-head32 lg:text-head48"
+                >
+                  Nossa plataforma de planejamento
+                </h4>
+                <p
+                  class="font-proximaNova font-normal text-body16 text-white max-w-[492px] mt-6"
+                >
+                  A TradingPro faz parte do grupo Six. É a plataforma número 1
+                  da América Latina para planejamento, organização e análise
+                  detalhada de desempenho. Se você realmente quer viver de
+                  trade, você precisa de um software profissional de gestão de
+                  trading.
+                </p>
+              </div>
+              <div
+                class="mt-16 flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
+              >
+                <a
+                  class="max-w-[278px] w-full flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
+                  href=""
+                >
+                  Adquirir treinamento
+                  <iconify-icon
+                    class="opacity-40"
+                    icon="bx:right-arrow-alt"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+            <div class="w-full max-w-[548px] hidden lg:block">
+              <img src="./assets/plataforma-tradingpro.svg" alt="" srcset="" />
+            </div>
+          </div>
+
+          <div
+            class="w-full justify-center flex flex-col-reverse md:flex-row items-center gap-12 mt-16"
+          >
+            <div>
+              <div
+                class="flex items-center justify-center lg:justify-start gap-4"
+              >
+                <iconify-icon
+                  class="text-WHITE text-body18"
+                  icon="foundation:x"
+                ></iconify-icon>
+                <p
+                  class="font-proximaNova font-semibold text-head24 text-white"
+                >
+                  OUTROS CURSOS
+                </p>
+              </div>
+              <ul class="flex flex-col gap-2 mt-4">
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Caderninho com garranchos
+                </li>
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Planilhas complexas e confusas
+                </li>
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Drives bagunçados
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div
+                class="flex items-center justify-center lg:justify-start gap-4"
+              >
+                <iconify-icon
+                  class="text-WHITE text-body18"
+                  icon="mdi:check-bold"
+                ></iconify-icon>
+                <p
+                  class="font-proximaNova font-semibold text-head24 text-white uppercase"
+                >
+                  a st6
+                </p>
+              </div>
+              <ul class="flex flex-col gap-2 mt-4">
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Caderninho com garranchos
+                </li>
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Planilhas complexas e confusas
+                </li>
+                <li
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                >
+                  <div class="h-1 w-1 bg-white rounded-full"></div>
+                  Drives bagunçados
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-BLACK w-full py-[80px] lg:py-[100px]">
+        <div class="container w-full flex flex-col gap-[148px]">
+          <div>
+            <div class="flex flex-col items-center">
+              <div
+                class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="bx:right-down-arrow-circle"
+                ></iconify-icon>
+              </div>
+              <h4
+                class="max-w-[424px] w-full mx-auto text-center font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
+              >
+                Indicadores <br />
+                ST6 Premium
+              </h4>
+
+              <p
+                class="font-proximaNova text-body16 text-white text-center mt-2 max-w-[470px]"
+              >
+                Ferramentas de alto nível que facilitam a sua jornada de
+                decisão. Você poderá testar e
+                <strong
+                  >escolher um deles para permanecer gratuitamente por 1
+                  ano.</strong
+                >
+              </p>
+            </div>
+
+            <div class="swiper-indicadores overflow-hidden mt-[60px]">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <p
+                    class="font-proximaNova font-bold uppercase text-body20 text-white text-center pb-1"
+                  >
+                    Cartesi 6
+                  </p>
+                  <img src="./assets/Cartesi-6.png" alt="Cartesi 6" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <p
+                    class="font-proximaNova font-bold uppercase text-body20 text-white text-center pb-1"
+                  >
+                    Delta 6
+                  </p>
+                  <img src="./assets/Delta-6.png" alt="Delta 6" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <p
+                    class="font-proximaNova font-bold uppercase text-body20 text-white text-center pb-1"
+                  >
+                    Route 6
+                  </p>
+                  <img src="./assets/Route-6.png" alt="Route 6" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <p
+                    class="font-proximaNova font-bold uppercase text-body20 text-white text-center pb-1"
+                  >
+                    Space 6
+                  </p>
+                  <img src="./assets/Space-6.png" alt="Space 6" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <p
+                    class="font-proximaNova font-bold uppercase text-body20 text-white text-center pb-1"
+                  >
+                    XST6
+                  </p>
+                  <img src="./assets/XST6.png" alt="XST6" />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-8 mt-10">
+              <div class="flex items-center gap-2">
+                <button
+                  class="swiper-button-prev-indicadores p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    rotate="180deg"
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+                <button
+                  class="swiper-button-next-indicadores p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-col items-center">
+              <div
+                class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-head24 text-WHITE"
+                  icon="bx:right-down-arrow-circle"
+                ></iconify-icon>
+              </div>
+              <h4
+                class="max-w-[424px] w-full mx-auto text-center font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
+              >
+                estratégias <br />
+                automatizadas
+              </h4>
+
+              <p
+                class="font-proximaNova text-body16 text-white text-center mt-2 max-w-[470px]"
+              >
+                Com as estratégias de automação você pode experimentar
+                resultados como estes...
+              </p>
+            </div>
+
+            <div class="swiper-estrategias overflow-hidden mt-[60px]">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/estrategia-automatizada-1.png"
+                    alt="Estrategia automatizada 1"
+                  />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img
+                    src="./assets/estrategia-automatizada-2.png"
+                    alt="Estrategia automatizada 2"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full flex justify-center items-center gap-8 mt-10">
+              <div class="flex items-center gap-2">
+                <button
+                  class="swiper-button-prev-estrategias p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    rotate="180deg"
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+                <button
+                  class="swiper-button-next-estrategias p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+                >
+                  <iconify-icon
+                    class="text-white text-body20"
+                    icon="material-symbols:chevron-right"
+                  ></iconify-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-[1072px] mx-auto w-full flex flex-col gap-[84px]">
+            <div
+              class="w-full flex flex-col-reverse lg:flex-row items-center lg:items-start gap-[60px] justify-center lg:justify-start"
+            >
+              <div class="max-w-[520px] w-full">
+                <img class="w-full" src="./assets/protocolo-thorp.png" alt="" />
+              </div>
+              <div
+                class="max-w-[448px] w-full flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
+              >
+                <div
+                  class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
+                >
+                  <iconify-icon
+                    class="text-head24 text-WHITE"
+                    icon="bx:right-down-arrow-circle"
+                  ></iconify-icon>
+                </div>
+                <h4
+                  class="w-full font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
+                >
+                  Protoco Thorp.
+                </h4>
+                <p
+                  class="font-proximaNova font-medium text-white text-body16 mt-6"
+                >
+                  Uma formação profissional de ponta a ponta voltada para
+                  operações de Swing Trade em Ações. O Sistema Black S. é um
+                  método estruturado, simples e poderoso para elevar seu patamar
+                  financeiro.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col lg:flex-row items-center lg:items-start gap-[60px] justify-center lg:justify-start"
+            >
+              <div
+                class="max-w-[448px] w-full flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
+              >
+                <div
+                  class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
+                >
+                  <iconify-icon
+                    class="text-head24 text-WHITE"
+                    icon="bx:right-down-arrow-circle"
+                  ></iconify-icon>
+                </div>
+                <h4
+                  class="w-full font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
+                >
+                  sistema black s.
+                </h4>
+                <p
+                  class="font-proximaNova font-medium text-white text-body16 mt-6"
+                >
+                  Uma formação profissional de ponta a ponta voltada para
+                  operações de Swing Trade em Ações. O Sistema Black S. é um
+                  método estruturado, simples e poderoso para elevar seu patamar
+                  financeiro.
+                </p>
+              </div>
+              <div class="max-w-[520px] w-full">
+                <img class="w-full" src="./assets/protocolo-thorp.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="mentor"
+        class="bg-BLACK w-full py-[80px] lg:py-[100px] border-t-[1px] border-GRAY_200"
+      >
+        <div class="container w-full">
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
+              >o mentor</span
+            >
+            <h3
+              class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[464px] mt-4"
+            >
+              Conheça o seu Mentor durante o treinamento
+            </h3>
+          </div>
+          <div
+            class="mt-[84px] flex flex-col lg:flex-row items-center lg:items-start lg:justify-evenly lg:items-start gap-10"
+          >
+            <div class="max-w-[384px] w-full">
+              <div
+                class="max-w-[384px] w-full h-[424px] bg-GRAY_200 rounded-lg overflow-hidden"
+              >
+                <img
+                  src="/assets/mentor.jpg"
+                  alt="Rafael Avelar"
+                  class="w-auto h-full object-cover object-center"
+                />
+              </div>
+              <div class="mt-8 flex flex-col items-center lg:items-start">
+                <h4
+                  class="text-head32 font-proximaNova text-white font-semibold"
+                >
+                  Rafael Avelar
+                </h4>
+                <p
+                  class="text-body16 font-proximaNova text-white font-medium mt-4"
+                >
+                  CNPI-P - Especialista em trade e investidor
+                </p>
+                <div class="flex gap-4 items-center mt-8">
+                  <a href="">
+                    <iconify-icon
+                      class="text-body18 text-white"
+                      icon="mdi:instagram"
+                    ></iconify-icon>
+                  </a>
+                  <a href="">
+                    <iconify-icon
+                      class="text-body18 text-white"
+                      icon="ri:linkedin-fill"
+                    ></iconify-icon>
+                  </a>
+                  <a href="">
+                    <iconify-icon
+                      class="text-body18 text-white"
+                      icon="mdi:youtube"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="max-w-[592px] w-full lg:mt-12 flex flex-col items-center lg:items-start text-center lg:text-left"
+            >
+              <span
+                class="font-proximaNova font-semibold text-BLUE_500 text-body16 uppercase"
+                >VOCÊ VAI APRENDER COM QUEM SABE DE VERDADE.</span
+              >
+              <div class="w-full flex flex-col gap-6 mt-12">
+                <p class="font-proximaNova font-medium text-white text-body16">
+                  O Pelotão de elite da Bolsa de Valores será comandado por
+                  Rafael Avelar.
+                </p>
+                <p class="font-proximaNova font-medium text-white text-body16">
+                  De família humilde do interior de Minas Gerais, Rafael chegou
+                  a vender sacolé na rua e trabalhar como office boy.
+                </p>
+                <p class="font-proximaNova font-medium text-white text-body16">
+                  Em 2009 conseguiu estágio em uma grande instituição
+                  financeira. Em 2011 foi efetivado em um dos maiores bancos do
+                  mundo. Desde então, tirou certificações financeiras de
+                  prestígio (CEA e CNPI-P) e ajudou centenas de pessoas a mudar
+                  de patamar financeiro com seu método de trading desenvolvido e
+                  lapidado ao longo de 10 anos.
+                </p>
+                <p class="font-proximaNova font-medium text-white text-body16">
+                  A sua abordagem prática e absolutamente simples é facilmente
+                  replicada por aqueles que querem atingir a consistência de
+                  lucros no menor tempo possível.
+                </p>
+              </div>
+              <div
+                class="flex flex-wrap justify-center lg:justify-start gap-6 mt-12"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="h-8 w-8 rounded-full bg-BLUE_500 grid place-content-center shadow-lg shadow-BLUE_500"
+                  >
+                    <iconify-icon
+                      class="text-head24 text-BLACK"
+                      icon="material-symbols:check"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="font-proximaNova text-white text-body18 font-semibold"
+                  >
+                    Experiência Comprovada
+                  </p>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="h-8 w-8 rounded-full bg-BLUE_500 grid place-content-center shadow-lg shadow-BLUE_500"
+                  >
+                    <iconify-icon
+                      class="text-head24 text-BLACK"
+                      icon="material-symbols:check"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="font-proximaNova text-white text-body18 font-semibold"
+                  >
+                    Foco no seu sucesso
+                  </p>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="h-8 w-8 rounded-full bg-BLUE_500 grid place-content-center shadow-lg shadow-BLUE_500"
+                  >
+                    <iconify-icon
+                      class="text-head24 text-BLACK"
+                      icon="material-symbols:check"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="font-proximaNova text-white text-body18 font-semibold"
+                  >
+                    Suporte continúo
+                  </p>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="h-8 w-8 rounded-full bg-BLUE_500 grid place-content-center shadow-lg shadow-BLUE_500"
+                  >
+                    <iconify-icon
+                      class="text-head24 text-BLACK"
+                      icon="material-symbols:check"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="font-proximaNova text-white text-body18 font-semibold"
+                  >
+                    Abordagem prática
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-BLACK w-full py-[80px] lg:py-[100px] border-t-[1px] border-GRAY_200"
+      >
+        <div class="container max-w-[1008px] w-full mx-auto">
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
+              >depoimentos</span
+            >
+            <h3
+              class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[464px] mt-4"
+            >
+              O que estão falando do conteúdo de Rafael Avelar??
+            </h3>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[30px] lg:mt-[84px] justify-items-center"
+          >
+            <img src="./assets/depoimento-1.png" alt="" srcset="" />
+            <img src="./assets/depoimento-2.png" alt="" srcset="" />
+            <img src="./assets/depoimento-3.png" alt="" srcset="" />
+            <img src="./assets/depoimento-4.png" alt="" srcset="" />
+            <img src="./assets/depoimento-5.png" alt="" srcset="" />
+            <img src="./assets/depoimento-6.png" alt="" srcset="" />
+            <img src="./assets/depoimento-7.png" alt="" srcset="" />
+            <img src="./assets/depoimento-8.png" alt="" srcset="" />
+            <img src="./assets/depoimento-9.png" alt="" srcset="" />
+            <img src="./assets/depoimento-10.png" alt="" srcset="" />
+            <img src="./assets/depoimento-11.png" alt="" srcset="" />
+            <img src="./assets/depoimento-12.png" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-BLACK w-full py-[80px] lg:py-[100px] border-t-[1px] border-GRAY_200"
+      >
+        <div class="container max-w-[1008px] w-full mx-auto">
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase text-center"
+              >Condição especial por tempo limitado</span
+            >
+            <h3
+              class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[606px] mt-4"
+            >
+              Adquira agora mesmo
+            </h3>
+            <p
+              class="max-w-[586px] text-center font-proximaNova text-body16 text-white font-normal mt-4"
+            >
+              Quanto você vai investir na Formação Special Trader 6 para ter
+              acesso às estratégias da elite do mercado financeiro com todos os
+              bônus especiais e começar a ganhar dinheiro no Day Trade?
+            </p>
+          </div>
+          <div
+            class="w-full flex flex-col lg:flex-row gap-8 items-center lg:items-start justify-center lg:justify-evenly mt-16"
+          >
+            <div class="max-w-[384px] w-full">
+              <div class="flex flex-col gap-6">
+                <ul class="flex flex-col gap-4">
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      Special Trader 6
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        1.997,00
+                      </p>
+                    </div>
+                  </li>
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      TradingPro
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        497,00
+                      </p>
+                    </div>
+                  </li>
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      Estratégias Automatizadas
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        1.997,00
+                      </p>
+                    </div>
+                  </li>
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      Indicadores Premium
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        1.997,00
+                      </p>
+                    </div>
+                  </li>
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      Protocolo Thorp
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        1.997,00
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-full flex items-center justify-between mt-8 pt-6 border-t-[1px] border-GRAY_200"
+              >
+                <p
+                  class="font-proximaNova text-body16 text-white font-semibold uppercase"
+                >
+                  VALOR TOTAL
+                </p>
+                <div
+                  class="bg-RED_500 px-4 py-1 rounded-3xl flex items-center gap-2"
+                >
+                  <span
+                    class="font-proximaNova text-body16 text-WHITE font-semibold"
+                    >R$</span
+                  >
+                  <p
+                    class="font-proximaNova text-body16 text-white font-semibold"
+                  >
+                    10.482,00
+                  </p>
+                </div>
+              </div>
+              <div class="mt-12">
+                <h6
+                  class="uppercase font-proximaNova text-white text-head24 leading-tight text-center"
+                >
+                  <b>ECONOMIZE</b> R$ 9.185 NA <br />
+                  COMPRA DO ST6
+                </h6>
+              </div>
+            </div>
+            <div class="max-w-[416px] w-full flex flex-col items-center">
+              <div class="p-2 bg-RED_PRICE inline-block">
+                <p
+                  class="font-proximaNova font-semibold text-white text-body16"
+                >
+                  DE <s>R$ 10.482,00</s>
+                </p>
+              </div>
+              <div class="flex flex-col max-w-[248px] mt-8">
+                <span
+                  class="self-center font-proximaNova font-medium text-white text-body16"
+                  >Por 12x de
+                </span>
+                <div class="self-start flex items-center gap-4">
+                  <span
+                    class="font-proximaNova font-bold text-BLUE_500 text-head48"
+                    >R$</span
+                  >
+                  <h6 class="font-proximaNova font-bold text-white text-head48">
+                    129,70
+                  </h6>
+                </div>
+                <p
+                  class="self-center font-proximaNova font-medium text-white text-body16"
+                >
+                  Ou R$ 1297,00 avista
+                </p>
+              </div>
+              <a
+                class="w-full bg-BLUE_500 rounded-lg py-4 flex justify-center font-proximaNova font-bold text-white uppercase text-button16 mt-8"
+                >COMPRAR AGORA</a
+              >
+              <div class="mt-8">
+                <img src="./assets/payment-methods.svg" alt="" srcset="" />
+              </div>
+              <div
+                class="flex gap-2 items-center px-4 py-2 bg-GRAY_200 rounded-3xl mt-6"
+              >
+                <iconify-icon
+                  class="text-body18 text-white"
+                  icon="ion:shield-sharp"
+                ></iconify-icon>
+                <p class="font-proximaNova text-white font-medium text-body16">
+                  Compra 100% segura.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="faq"
+        class="bg-BLACK w-full py-[80px] lg:py-[100px] border-t-[1px] border-GRAY_200"
+      >
+        <div class="max-w-[800px] w-full mx-auto px-[24px]">
+          <div class="flex flex-col items-center justify-center">
+            <span
+              class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
+              >PERGUNTAS E RESPOSTAS</span
+            >
+            <h3
+              class="text-center font-proximaNova text-head40 text-white font-semibold max-w-[606px] mt-4"
+            >
+              Dúvidas Frequentes sobre o Special Trader 6 (ST6)
+            </h3>
+          </div>
+
+          <div class="flex flex-col gap-8 mt-[84px]">
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >1.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    O que é o Special Trader 6 (ST6)?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  O ST6 é um programa de treinamento abrangente projetado para
+                  transformar operadores iniciantes em especialistas em Day
+                  Trade rapidamente. Além de aulas de alta qualidade você tem a
+                  oportunidade de acessar Estratégias de automação, Sistema
+                  Profissional de Trade, Indicadores Premium e muito mais para
+                  impulsionar a sua jornada no mercado financeiro e alcançar a
+                  consistência de lucros no menor tempo possível.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >2.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Por quanto tempo terei acesso ao treinamento (aulas)?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Você terá acesso por 1 ano.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >3.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Quanto tempo de acesso aos Indicadores Premium?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Você terá acesso aos nossos principais indicadores por 30
+                  dias. Após esse período
+                  <strong
+                    >poderá escolher um deles para permanecer com acesso por 1
+                    ano</strong
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >4.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Quanto tempo de acesso as estratégias automatizadas?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Acesso por 30 dias.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >5.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Quanto tempo de acesso a TradingPro?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Acesso por 6 meses.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >6.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Preciso ter experiência em Day trade para participar do ST6?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Não é necessária nenhuma experiência no mercado. No ST6 você
+                  aprende do absoluto zero.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >7.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Quanto tempo preciso me dedicar diariamente ao ST6?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Apenas 1 hora por dia.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >8.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Quais são os pré-requisitos para participar do ST6?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Tudo o que você precisa é m PC ou notebook simples e conexão
+                  com a internet.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >9.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Há suporte durante o treinamento?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Sim. Você poderá tirar dúvidas e interagir em nossos canais de
+                  comunicação.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >10.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Como funciona a garantia?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Oferecemos uma garantia incondicional de 7 dias. Sendo assim,
+                  você pode entrar, acessar o conteúdo e, se não se adaptar,
+                  entender que não é para você naquele momento ou até mesmo se
+                  arrepender nos primeiros 7 sete dias, pode solicitar o
+                  reembolso dentro desse prazo e nós devolveremos 100% do valor
+                  investido. Simples assim, sem complicação.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item transition-all">
+              <button
+                class="accordion-button w-full flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4 pointer-events-none">
+                  <span
+                    class="font-proximaNova font-medium text-BLUE_500 text-body18"
+                    >11.</span
+                  >
+                  <p
+                    class="font-proximaNova font-medium text-white text-body18 text-left"
+                  >
+                    Como acessar?
+                  </p>
+                </div>
+                <div
+                  class="accordion-button-icon pointer-events-none rounded-full h-8 w-8 border-[1px] border-GRAY_300 grid place-content-center"
+                >
+                  <iconify-icon
+                    icon="bx:down-arrow-alt"
+                    rotate="270deg"
+                    class="text-white text-head24"
+                  ></iconify-icon>
+                </div>
+              </button>
+              <div
+                class="accordion-text w-full pointer-events-none transition-all"
+              >
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Após realizar o pagamento e ter sido confirmado com sucesso,
+                  você receberá o acesso ao nosso portal de aulas com o seu
+                  login e senha por e-mail.
+                </p>
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Você poderá acessar o portal pelo link que receber via e-mail
+                  ou clicar em Entrar, no topo da página do site. Caso encontre
+                  qualquer dificuldade com a senha, é só utilizar a função
+                  “Esqueceu sua senha?”.
+                </p>
+                <p
+                  class="font-proximaNova font-normal text-white text-body18 mt-8"
+                >
+                  Se tiver alguma dúvida, não se preocupe, o nosso suporte está
+                  sempre disposto a ajudar da melhor maneira. É só enviar uma
+                  mensagem para:
+                  <a href="mailto:contato@sixtraders.com.br"
+                    >contato@sixtraders.com.br</a
+                  >
+                  ou WhatsApp <a href="https://wa.me/5511979727524"></a>+55 (11)
+                  97972-7524.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full flex flex-col md:flex-row gap-4 items-center justify-between mt-[84px]"
+          >
+            <p
+              class="font-proximaNova text-white text-body18 font-medium max-w-[376px] w-full text-center md:text-left"
+            >
+              Se tiver mais alguma dúvida, entre em contato conosco. Estamos
+              aqui para ajudar! 😉
+            </p>
+            <a
+              class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-EMERALD font-proximaNova text-WHITE font-semibold max-w-[228px]"
+              href=""
+            >
+              Entrar em contato
+              <iconify-icon
+                class="text-body20"
+                icon="ic:baseline-whatsapp"
+              ></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-BLACK">
+        <div class="container">
+          <div
+            class="w-full p-8 sm:p-12 lg:py-0 lg:h-[376px] rounded-3xl bg-BLUE_500 flex justify-between"
+          >
+            <div
+              class="flex flex-col justify-center lg:max-w-[424px] text-center lg:text-left"
+            >
+              <h6
+                class="font-proximaNova font-semibold text-head32 text-WHITE leading-tight"
+              >
+                A hora de se tornar um Special Trader 6 é agora.
+              </h6>
+              <p
+                class="font-proximaNova font-medium text-body18 text-WHITE mt-4"
+              >
+                Transforme sua jornada no Day Trade e alcance a consistência de
+                lucros. Junte-se à elite da Bolsa de Valores - Junte-se ao ST6!
+              </p>
+              <div class="mt-8 flex items-center justify-center">
+                <a
+                  class="py-3 max-w-[316px] w-full bg-WHITE flex justify-center items-center gap-3 rounded-lg font-proximaNova font-semibold text-BLUE_500"
+                  href=""
+                >
+                  Adquirir treinamento
+                  <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                </a>
+              </div>
+            </div>
+            <div
+              class="relative h-[376px] max-w-[526px] w-full hidden lg:block"
+            >
+              <img
+                class="absolute bottom-0"
+                src="./assets/FOTO_TRADER.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full py-[124px] bg-BLACK">
+      <div class="container w-full">
+        <div
+          class="flex flex-col lg:flex-row items-start justify-between w-full"
+        >
+          <div
+            class="flex flex-col gap-[26px] items-center lg:items-start lg:max-w-[280px] w-full mb-10 pb-10"
+          >
+            <div class="max-w-[170px]">
+              <img src="./assets/LOGO_SIX_TRADING.svg" alt="Six trading" />
+            </div>
+
+            <p class="font-proximaNova font-medium text-body16 text-[#494E53]">
+              Descubra o Método Exclusivo que Transforma Operadores Iniciantes
+              em Special Traders 6.
+            </p>
+
+            <a
+              class="bg-WHITE py-2 px-4 rounded-lg font-proximaNova font-semibold text-BLACK"
+              href=""
+              >Já sou cliente</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row gap-12 items-start w-full lg:w-auto mb-10"
+          >
+            <div
+              class="flex flex-col gap-8 w-full items-center lg:items-start text-center lg:text-left"
+            >
+              <p
+                class="font-proximaNova font-semibold text-body16 text-WHITE uppercase"
+              >
+                SEÇÕES
+              </p>
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href="#methodology"
+                    >Metodologia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href="#plan"
+                    >O Plano</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href="#bonus"
+                    >Bônus</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href="#mentor"
+                    >Mentor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href="#faq"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col gap-8 w-full items-center lg:items-start text-center lg:text-left"
+            >
+              <p
+                class="font-proximaNova font-semibold text-body16 text-WHITE uppercase"
+              >
+                Acompanhe
+              </p>
+              <ul class="flex gap-4">
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href=""
+                    ><iconify-icon
+                      class="text-body20 text-white"
+                      icon="mdi:instagram"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href=""
+                    ><iconify-icon
+                      class="text-body20 text-white"
+                      icon="ri:linkedin-fill"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href=""
+                    ><iconify-icon
+                      class="text-body20 text-white"
+                      icon="mdi:youtube"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href=""
+                    ><iconify-icon
+                      class="text-body20 text-white"
+                      icon="ri:facebook-fill"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="font-proximaNova font-medium text-body16 text-white"
+                    href=""
+                    ><iconify-icon
+                      class="text-body20 text-white"
+                      icon="mdi:twitter"
+                    ></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:max-w-[316px] flex flex-col gap-12 text-center lg:text-left"
+          >
+            <div class="flex flex-col gap-8">
+              <p
+                class="font-proximaNova font-semibold text-body16 text-WHITE uppercase"
+              >
+                adquira o treinamento
+              </p>
+              <div>
+                <a
+                  class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-BLUE_500 font-proximaNova text-WHITE font-semibold"
+                  href=""
+                >
+                  Adquirir treinamento
+                  <iconify-icon icon="mdi:arrow-right"></iconify-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-8">
+              <div>
+                <p
+                  class="font-proximaNova font-semibold text-body16 text-WHITE uppercase"
+                >
+                  suporte via whatsapp
+                </p>
+                <p
+                  class="font-proximaNova font-medium text-white text-body14 mt-4"
+                >
+                  Time comercial atende de SEG a SEX das 8:00h até as 21:00
+                </p>
+              </div>
+              <div>
+                <a
+                  class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-EMERALD font-proximaNova text-WHITE font-semibold"
+                  href=""
+                >
+                  Enviar mensagem
+                  <iconify-icon
+                    class="text-body20"
+                    icon="ic:baseline-whatsapp"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between mt-[84px] gap-4 text-center"
+        >
+          <p class="font-proximaNova font-medium text-WHITE text-body16">
+            © 2023 Six Hub Investimentos Ltda. Todos os direitos reservados.
+            CNPJ: 44.647.406/0001-36
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="inline-block shrink-0">
+              <a
+                class="font-proximaNova font-semibold text-WHITE text-body16"
+                href="/politicas-de-privacidade"
+                >Políticas de privacidade</a
+              >
+            </div>
+            <div class="inline-block shrink-0">
+              <a
+                class="font-proximaNova font-semibold text-WHITE text-body16"
+                href="/termos-de-uso"
+                >Termos de uso</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-[84px]">
+          <p
+            class="font-proximaNova font-semibold text-GRAY_300 text-body16 text-center"
+          >
+            Retornos passados não representam garantia de rentabilidade futura
+            em nenhum tipo de investimento. Investimentos em renda variável
+            envolvem riscos e podem trazer perdas financeiras a qualquer
+            investidor. Os resultados podem variar de pessoa para pessoa, da
+            forma como é aplicada e também da estratégia utilizada.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- <script src="/js/header.js"></script>
+    <script src="/js/hero.js"></script>
+    <script src="/js/accordion.js"></script>
+    <script src="/js/swippers.js"></script> -->
+    <script src="/bundle.js"></script>
+  </body>
+</html>
