@@ -6,11 +6,10 @@ export default function Accordion() {
   const accordionVisibleClass = "accordion-active";
 
   const accordionHandleClick = (e) => {
-    console.log(e.target);
-
     const alreadyHasActive = e.target.parentNode.classList.contains(
       accordionVisibleClass
     );
+
     if (alreadyHasActive) {
       e.target.parentNode.classList.remove(accordionVisibleClass);
     } else {
@@ -23,7 +22,7 @@ export default function Accordion() {
   };
 
   accordion.forEach((accItem) => {
-    accItem.addEventListener("click", accordionHandleClick);
+    accItem.querySelector('button').addEventListener("click", accordionHandleClick);
   });
 
   // THE PLAN
