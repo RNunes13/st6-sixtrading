@@ -85,7 +85,6 @@ header:not(.header-scrolled) {
 .swiper-ganhos .swiper-slide:not(.swiper-slide-active),
 .swiper-indicadores .swiper-slide:not(.swiper-slide-active),
 .swiper-estrategias .swiper-slide:not(.swiper-slide-active) {
-  filter: blur(7px) grayscale(90%);
   transform: scale(0.8);
 
   @media screen and (max-width: 1020px) {

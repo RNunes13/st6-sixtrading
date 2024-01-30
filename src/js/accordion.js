@@ -22,7 +22,9 @@ export default function Accordion() {
   };
 
   accordion.forEach((accItem) => {
-    accItem.querySelector('button').addEventListener("click", accordionHandleClick);
+    accItem
+      .querySelector("button")
+      .addEventListener("click", accordionHandleClick);
   });
 
   // THE PLAN
@@ -33,7 +35,7 @@ export default function Accordion() {
       idx: 1,
       title: "Idealização",
       description:
-        "Se você não sabe para onde vai qualquer caminho serve. E você não quer chegar a um destino que lhe traga prejuízos. Você terá de uma vez por todas a direção certa no mercado, o caminho da consistência de lucros e prosperidade.",
+        "Se você não sabe para onde vai, qualquer caminho serve. E você não quer chegar a um destino que lhe traga prejuízos. Você terá de uma vez por todas a direção certa no mercado, o caminho da consistência de lucros e prosperidade.",
     },
     {
       idx: 2,
@@ -44,12 +46,14 @@ export default function Accordion() {
     {
       idx: 3,
       title: "Controle de Capital",
-      description: "Você vai descobrir como gerenciar o risco do jeito certo.",
+      description:
+        "Se você não tem um bom controle de capital pode perder os ganhos obtidos ao longo do tempo. O ST6 te fornece o passo a passo de como controlar o capital de maneira profissional.",
     },
     {
       idx: 4,
       title: "Mindset",
-      description: "Você estará alinhado ao mindset de um Trader 6.",
+      description:
+        "O ST6 foge do convencional, o nosso treinamento mental é de uma maneira que você jamais viu. Usando as ferramentas disponibilizadas, você vai desenvolver a capacidade de estudar os padrões e hábitos no seu próprio jogo mental e operar de uma forma muito mais lógica.",
     },
     {
       idx: 5,
@@ -61,21 +65,19 @@ export default function Accordion() {
       idx: 6,
       title: "Progresso",
       description:
-        "Você vai progredir quando descobrir como usar a estatística ao seu favor. E quanto mais você progride mais você absorve conhecimento de mercado. Aqui você pode começar aumentar os lotes e ter resultados sustentáveis.",
+        "Você progride quando descobre como usar o planejamento, jogo mental, controle de capital e a estatística a seu favor — e quanto mais você progride mais você absorve conhecimento de mercado. A partir daí você pode começar a aumentar os lotes e ter resultados sustentáveis.",
     },
   ];
 
   const tabContainer = document.querySelector("#tabs");
   const mobileTabContainer = document.querySelector("#mobile-tabs");
 
-  const NumberRefStep = document.querySelector("#number-reference-step");
   const TitlerRefStep = document.querySelector("#title-reference-step");
   const TextRefStep = document.querySelector("#text-reference-step");
 
   let tabActiveIdx = 1;
 
   const handleTabToggle = (e) => {
-    console.log('CLICKED')
     const selectedIdx = parseInt(
       e.target.closest("button").getAttribute("data-idx"),
       10
@@ -103,7 +105,6 @@ export default function Accordion() {
 
     if (step) {
       // Update the tab content
-      NumberRefStep.innerHTML = `${step.idx}.`;
       TitlerRefStep.innerHTML = `${step.title}.`;
       TextRefStep.innerHTML = `${step.description}.`;
       /* tabContentContainer.innerHTML = `
@@ -122,7 +123,7 @@ export default function Accordion() {
     tabButton.setAttribute("data-idx", step.idx); // Set a data attribute for the index
 
     tabButton.innerHTML = `
-      <div class="pointer-events-none h-[40px] w-[40px] rounded-full bg-BLUE_500  transition-all ${
+      <div class="pointer-events-none h-[2.5rem] w-[2.5rem] rounded-full bg-BLUE_500  transition-all ${
         tabActiveIdx === step.idx ? "" : "bg-opacity-10"
       } grid place-content-center font-proximaNova font-semibold text-body18 text-white shrink-0">
         ${step.idx}.
@@ -133,7 +134,7 @@ export default function Accordion() {
     `;
 
     const tabButtonMobile = tabButton.cloneNode(true);
-    
+
     tabContainer.appendChild(tabButton);
     mobileTabContainer.appendChild(tabButtonMobile);
 

@@ -41,7 +41,7 @@
               <a
                 class="font-proximaNova font-medium text-body14 text-GRAY_300"
                 href="#hero"
-                >Ínicio</a
+                >Início</a
               >
             </li>
             <li>
@@ -90,12 +90,12 @@
           <nav class="flex items-center gap-4 flex-col lg:flex-row">
             <a
               class="px-4 py-2 bg-GRAY_800 rounded-lg font-proximaNova font-semibold text-WHITE"
-              href=""
+              href="https://special.sixtraders.com.br/"
               >Já sou ST6</a
             >
             <a
               class="px-4 py-2 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
-              href=""
+              href="#shop"
               >Entrar para o ST6</a
             >
           </nav>
@@ -132,7 +132,7 @@
             <div class="mt-16 flex items-center flex-col w-full lg:items-start">
               <a
                 class="flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE max-w-[280px] w-full"
-                href=""
+                href="#shop"
               >
                 Entrar para o ST6
                 <iconify-icon
@@ -163,22 +163,15 @@
           >
             <iframe
               id="hero-video"
-              class="hidden"
               width="590"
               height="350"
-              data-src="https://www.youtube.com/embed/eLIcD9v1epU?si=f8Bn4XICIuAhj_HO&controls=0&autoplay=1&rel=0"
+              src="https://www.youtube.com/embed/eLIcD9v1epU?si=f8Bn4XICIuAhj_HO&controls=0&autoplay=1&rel=0"
               title="YouTube video player"
               frameborder="0"
               allow="autoplay; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen
             ></iframe>
 
-            <img
-              id="hero-video-placeholder"
-              src="/assets/hero-video-placeholder.png"
-              alt="video placeholder"
-              class="cursor-pointer"
-            />
             <p
               class="font-proximaNova text-white text-body14 font-medium pt-3 text-center"
             >
@@ -209,7 +202,7 @@
             </h1>
             <a
               class="hidden lg:inline-flex items-center justify-center gap-6 p-6 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE mt-16 md:max-w-[18.125rem] w-full"
-              href=""
+              href="#shop"
             >
               <iconify-icon
                 class="opacity-40"
@@ -219,7 +212,7 @@
             </a>
           </div>
           <div
-            class="w-full flex flex-col gap-12 items-center text-center lg:items-start lg:text-left"
+            class="w-full flex flex-col gap-5 items-center text-center lg:items-start lg:text-left"
           >
             <p
               class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
@@ -231,22 +224,21 @@
             <p
               class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
             >
-              Os comandos Seals são numerados de um a cinco e de sete a dez.
-              <strong>A equipe de número 6</strong>, considerada a elite da
-              elite, <strong>é a mais secreta e cobiçada</strong>. Quando a
+              Os comandos Seals são numerados de um a cinco e de sete a
+              dez. <strong>A equipe de número 6</strong>, considerada a elite da
+              elite, <strong>é a mais secreta e cobiçada.</strong> Quando a
               marinha norte americana envia a sua elite, ela envia os Seals.
-              Quando os Seals enviam a sua elite, eles enviam o
-              <strong>Seal Team 6</strong>. A unidade passa pelo treinamento
-              mais poderoso do mundo, desenvolvendo a força mental e tática.
+              Quando os Seals enviam a sua elite, eles enviam o <strong
+                >Seal Team 6</strong
+              >. A unidade passa pelo treinamento mais poderoso do mundo,
+              desenvolvendo a força mental e tática.
             </p>
             <p
               class="max-w-[696px] w-full font-proximaNova text-white font-normal text-body18 leading-normal"
             >
               Na bolsa de valores também encontramos aqueles que estão
-              preparados para operar em qualquer ambiente, seja com o mercado em
-              queda ou o mundo em crise. Esse operador passa por um treinamento
-              de elite rigoroso e tem habilidade para se adaptar com facilidade
-              ao mercado.
+              preparados para operar em qualquer ambiente e se adaptam
+              facilmente ao mercado.
             </p>
             <p
               class="max-w-[696px] w-full font-proximaNova text-white font-semibold text-head24 leading-normal"
@@ -270,12 +262,36 @@
       </section>
 
       <section id="methodology" class="w-full py-[80px] lg:py-[130px] bg-BLACK">
-        <div class="container">
-          <p class="font-proximaNova font-semibold text-BLUE_500 text-head24">
+        <div class="container flex flex-wrap flex-col md:flex-row">
+          <p class="font-proximaNova font-semibold text-BLUE_500 text-head24 grow">
             Uma metodologia única para aprender e aplicar.
           </p>
 
-          <div class="swiper w-full h-full mt-12">
+          <div
+            class="flex gap-8 items-center justify-center w-full md:max-w-[100px] order-last md:order-none mt-10 md:mt-0"
+          >
+            <div class="flex items-center gap-2">
+              <button
+                class="swiper-button-prev-methodology p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+              >
+                <iconify-icon
+                  rotate="180deg"
+                  class="text-white text-body20"
+                  icon="material-symbols:chevron-right"
+                ></iconify-icon>
+              </button>
+              <button
+                class="swiper-button-next-methodology p-2 rounded-full border border-gray-600 grid place-content-center hover:opacity-60 transition-all"
+              >
+                <iconify-icon
+                  class="text-white text-body20"
+                  icon="material-symbols:chevron-right"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper w-full h-full mt-12 basis-full">
             <div class="swiper-wrapper h-[412px] z-50">
               <div
                 class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
@@ -299,10 +315,39 @@
                   <p
                     class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
                   >
-                    O nosso foco é o Day Trade. Aqui você vai aprender tudo o
-                    que precisa para evoluir e descobrir o seu verdadeiro
-                    potencial como Trader. Além disso, vai receber treinamento
-                    de Swing Trade e Opções de ações.
+                    O nosso foco é o Day Trade. Aqui você aprende tudo o que
+                    precisa para evoluir e descobre o seu verdadeiro potencial
+                    como Trader. Além disso, recebe treinamento de Swing Trade e
+                    Opções de ações.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
+              >
+                <div>
+                  <div
+                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
+                  >
+                    <iconify-icon
+                      class="text-white text-head24"
+                      icon="bx:trending-up"
+                    ></iconify-icon>
+                  </div>
+                  <p
+                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
+                  >
+                    Indicadores Premium
+                  </p>
+                </div>
+                <div class="">
+                  <p
+                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
+                  >
+                    Você recebe indicadores especiais capazes de transformar os
+                    seus resultados rapidamente. São ferramentas que otimizam a
+                    análise, deixam tudo mais simples e aumentam a precisão dos
+                    seus trades.
                   </p>
                 </div>
               </div>
@@ -362,38 +407,9 @@
                   <p
                     class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
                   >
-                    Você vai descobrir um novo mundo para operações de Day Trade
-                    e ter a oportunidade de experimentar estratégias
-                    automatizadas vitoriosas ao longo do tempo.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="swiper-slide flex flex-col p-8 gap-8 bg-GRAY_200 rounded-lg max-w-[384px] w-full !h-auto"
-              >
-                <div>
-                  <div
-                    class="h-12 w-12 rounded-full border-[1px] border-white grid place-content-center"
-                  >
-                    <iconify-icon
-                      class="text-white text-head24"
-                      icon="bx:globe"
-                    ></iconify-icon>
-                  </div>
-                  <p
-                    class="mt-6 uppercase font-proximaNova font-semibold text-white text-body18"
-                  >
-                    Indicadores Premium
-                  </p>
-                </div>
-                <div class="">
-                  <p
-                    class="font-proximaNova font-medium text-white leading-normal text-body16 mt-6"
-                  >
-                    Você vai receber indicadores especiais capazes de
-                    transformar os seus resultados rapidamente. São ferramentas
-                    que otimizam a análise, deixam tudo mais simples e aumentam
-                    a precisão dos seus trades.
+                    Um novo mundo para operações de Day Trade e a oportunidade
+                    de experimentar estratégias de automação vitoriosas ao longo
+                    do tempo.
                   </p>
                 </div>
               </div>
@@ -402,7 +418,7 @@
         </div>
       </section>
 
-      <section class="bg-BLUE_700 pt-[5rem] lg:pt-[120px]">
+      <section class="bg-bg-GRAY_800 pt-[5rem] lg:pt-[120px]">
         <div class="container">
           <div class="flex flex-col items-center justify-center">
             <span
@@ -482,7 +498,7 @@
         </div>
       </section>
 
-      <section class="bg-BLUE_700 py-[2.5rem] lg:py-[120px]">
+      <section class="bg-bg-GRAY_800 py-[2.5rem] lg:py-[120px]">
         <div class="container pb-[148px]">
           <div class="flex flex-col items-center justify-center">
             <h3
@@ -549,7 +565,7 @@
 
       <section
         id="plan"
-        class="bg-BLUE_700 w-full py-[80px] lg:pt-[120px] lg:pt-[100px]"
+        class="bg-bg-BLACK w-full py-[80px] lg:pt-[120px] lg:pt-[100px]"
       >
         <div class="container w-full">
           <div class="flex flex-col items-center lg:items-start">
@@ -581,11 +597,6 @@
 
             <div class="w-full flex justify-center items-center h-full">
               <div id="tab-content" class="max-w-[548px] w-full">
-                <span
-                  id="number-reference-step"
-                  class="font-proximaNova font-semibold text-head64 text-BLUE_500"
-                  >1.</span
-                >
                 <h3
                   id="title-reference-step"
                   class="font-proximaNova font-semibold text-head40 text-white mt-6"
@@ -599,13 +610,23 @@
                   Se você não sabe para onde vai qualquer caminho serve. E você
                   não quer chegar a um destino que lhe traga prejuízos.
                 </p>
+                <a
+                  class="max-w-[278px] w-full flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE mt-12"
+                  href="#shop"
+                >
+                  Entrar para o ST6
+                  <iconify-icon
+                    class="opacity-40"
+                    icon="bx:right-arrow-alt"
+                  ></iconify-icon>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-BLUE_700 py-[80px] lg:pt-[100px] lg:pb-[120px]">
+      <section class="bg-BLACK py-[80px] lg:pt-[100px] lg:pb-[120px]">
         <div class="w-full container">
           <div class="flex flex-col items-center max-w-[664px] mx-auto">
             <p
@@ -926,7 +947,7 @@
                     <p
                       class="font-proximaNova font-semibold text-white text-body16"
                     >
-                      Vídeo de instrudução a ST6
+                      Introdução ao ST6
                     </p>
                   </div>
                   <iconify-icon
@@ -1084,9 +1105,9 @@
             <div class="mt-10 lg:mt-0">
               <a
                 class="max-w-[278px] w-full flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
-                href=""
+                href="#shop"
               >
-                Adquirir treinamento
+                Entrar para o ST6
                 <iconify-icon
                   class="opacity-40"
                   icon="bx:right-arrow-alt"
@@ -1105,7 +1126,7 @@
           <div class="max-w-[762px] mx-auto flex flex-col items-center gap-6">
             <span
               class="bg-white py-1 px-3 rounded-2xl font-proximaNova font-semibold text-black"
-              >BONÚS PROMOCIONAL</span
+              >BÔNUS PROMOCIONAL</span
             >
             <h3
               class="text-center max-w-[424px] font-proximaNova font-semibold text-white text-head40"
@@ -1131,11 +1152,11 @@
                 class="flex flex-col lg:flex-row items-center gap-3 lg:gap-8 mt-8 justify-center lg:justify-start"
               >
                 <span class="font-proximaNova uppercase text-white"
-                  >BONÚS PROMOCIONAL</span
+                  >BÔNUS PROMOCIONAL</span
                 >
                 <span
                   class="bg-[#1CA164] py-1 px-3 rounded-2xl font-proximaNova font-semibold text-white uppercase text-center"
-                  >assine a st6 e receba sem custos</span
+                  >Receba sem custos por 6 meses</span
                 >
               </div>
 
@@ -1162,9 +1183,9 @@
               >
                 <a
                   class="max-w-[278px] w-full flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE"
-                  href=""
+                  href="#shop"
                 >
-                  Adquirir treinamento
+                  Entrar para o ST6
                   <iconify-icon
                     class="opacity-40"
                     icon="bx:right-arrow-alt"
@@ -1231,22 +1252,12 @@
               </div>
               <ul class="flex flex-col gap-2 mt-4">
                 <li
-                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
+                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2 max-w-[300px]"
                 >
                   <div class="h-1 w-1 bg-white rounded-full"></div>
-                  Caderninho com garranchos
-                </li>
-                <li
-                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
-                >
-                  <div class="h-1 w-1 bg-white rounded-full"></div>
-                  Planilhas complexas e confusas
-                </li>
-                <li
-                  class="font-proximaNova font-medium text-body18 text-white flex items-center gap-2"
-                >
-                  <div class="h-1 w-1 bg-white rounded-full"></div>
-                  Drives bagunçados
+                  Tudo organizado no mesmo lugar com todas informações que você
+                  precisa para alavancar os resultados e subir para o próximo
+                  nível
                 </li>
               </ul>
             </div>
@@ -1406,6 +1417,26 @@
                     alt="Estrategia automatizada 2"
                   />
                 </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img src="./assets/e1.png" alt="Estrategia automatizada 1" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img src="./assets/e2.png" alt="Estrategia automatizada 3" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img src="./assets/e31.png" alt="Estrategia automatizada 4" />
+                </div>
+                <div
+                  class="swiper-slide rounded-lg object-cover overflow-hidden"
+                >
+                  <img src="./assets/e32.png" alt="Estrategia automatizada 5" />
+                </div>
               </div>
             </div>
 
@@ -1433,38 +1464,6 @@
           </div>
 
           <div class="max-w-[1072px] mx-auto w-full flex flex-col gap-[84px]">
-            <div
-              class="w-full flex flex-col-reverse lg:flex-row items-center lg:items-start gap-[60px] justify-center lg:justify-start"
-            >
-              <div class="max-w-[520px] w-full">
-                <img class="w-full" src="./assets/protocolo-thorp.png" alt="" />
-              </div>
-              <div
-                class="max-w-[448px] w-full flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
-              >
-                <div
-                  class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
-                >
-                  <iconify-icon
-                    class="text-head24 text-WHITE"
-                    icon="bx:right-down-arrow-circle"
-                  ></iconify-icon>
-                </div>
-                <h4
-                  class="w-full font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
-                >
-                  Protoco Thorp.
-                </h4>
-                <p
-                  class="font-proximaNova font-medium text-white text-body16 mt-6"
-                >
-                  Uma formação profissional de ponta a ponta voltada para
-                  operações de Swing Trade em Ações. O Sistema Black S. é um
-                  método estruturado, simples e poderoso para elevar seu patamar
-                  financeiro.
-                </p>
-              </div>
-            </div>
             <div
               class="w-full flex flex-col lg:flex-row items-center lg:items-start gap-[60px] justify-center lg:justify-start"
             >
@@ -1497,6 +1496,38 @@
                 <img class="w-full" src="./assets/protocolo-thorp.png" alt="" />
               </div>
             </div>
+            <div
+              class="w-full flex flex-col-reverse lg:flex-row items-center lg:items-start gap-[60px] justify-center lg:justify-start"
+            >
+              <div class="max-w-[520px] w-full">
+                <img class="w-full" src="./assets/protocolo-thorp.png" alt="" />
+              </div>
+              <div
+                class="max-w-[448px] w-full flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
+              >
+                <div
+                  class="h-12 w-12 bg-BLUE_500 rounded-full grid place-content-center"
+                >
+                  <iconify-icon
+                    class="text-head24 text-WHITE"
+                    icon="bx:right-down-arrow-circle"
+                  ></iconify-icon>
+                </div>
+                <h4
+                  class="w-full font-proximaNova text-white uppercase font-semibold text-head32 lg:text-head40 leading-tight mt-8"
+                >
+                  Protoco Thorp.
+                </h4>
+                <p
+                  class="font-proximaNova font-medium text-white text-body16 mt-6"
+                >
+                  Um Treinamento Essencial de Opções de Ações com as melhores
+                  estratégias de um dos mercados mais lucrativos do mundo.
+                  Aprenda de forma simples as técnicas utilizadas pelos grandes
+                  investidores.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1527,7 +1558,7 @@
                 <img
                   src="/assets/mentor.jpg"
                   alt="Rafael Avelar"
-                  class="w-auto h-full object-cover object-center"
+                  class="w-auto h-full object-cover object-right"
                 />
               </div>
               <div class="mt-8 flex flex-col items-center lg:items-start">
@@ -1542,19 +1573,13 @@
                   CNPI-P - Especialista em trade e investidor
                 </p>
                 <div class="flex gap-4 items-center mt-8">
-                  <a href="">
+                  <a href="https://www.instagram.com/rafa_avelar/">
                     <iconify-icon
                       class="text-body18 text-white"
                       icon="mdi:instagram"
                     ></iconify-icon>
                   </a>
-                  <a href="">
-                    <iconify-icon
-                      class="text-body18 text-white"
-                      icon="ri:linkedin-fill"
-                    ></iconify-icon>
-                  </a>
-                  <a href="">
+                  <a href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA">
                     <iconify-icon
                       class="text-body18 text-white"
                       icon="mdi:youtube"
@@ -1572,20 +1597,17 @@
               >
               <div class="w-full flex flex-col gap-6 mt-12">
                 <p class="font-proximaNova font-medium text-white text-body16">
-                  O Pelotão de elite da Bolsa de Valores será comandado por
-                  Rafael Avelar.
-                </p>
-                <p class="font-proximaNova font-medium text-white text-body16">
                   De família humilde do interior de Minas Gerais, Rafael chegou
-                  a vender sacolé na rua e trabalhar como office boy.
+                  a trabalhar como office boy.
                 </p>
                 <p class="font-proximaNova font-medium text-white text-body16">
                   Em 2009 conseguiu estágio em uma grande instituição
                   financeira. Em 2011 foi efetivado em um dos maiores bancos do
                   mundo. Desde então, tirou certificações financeiras de
-                  prestígio (CEA e CNPI-P) e ajudou centenas de pessoas a mudar
-                  de patamar financeiro com seu método de trading desenvolvido e
-                  lapidado ao longo de 10 anos.
+                  prestígio (CEA e CNPI-P), alcançou a consistência de lucros no
+                  Day tarde e ajudou centenas de pessoas a mudar de patamar
+                  financeiro com seu método de trading desenvolvido e lapidado
+                  ao longo de 10 anos.
                 </p>
                 <p class="font-proximaNova font-medium text-white text-body16">
                   A sua abordagem prática e absolutamente simples é facilmente
@@ -1697,6 +1719,7 @@
       </section>
 
       <section
+        id="shop"
         class="bg-BLACK w-full py-[80px] lg:py-[100px] border-t-[1px] border-GRAY_200"
       >
         <div class="container max-w-[1008px] w-full mx-auto">
@@ -1713,9 +1736,7 @@
             <p
               class="max-w-[586px] text-center font-proximaNova text-body16 text-white font-normal mt-4"
             >
-              Quanto você vai investir na Formação Special Trader 6 para ter
-              acesso às estratégias da elite do mercado financeiro com todos os
-              bônus especiais e começar a ganhar dinheiro no Day Trade?
+              Quanto você vai investir na Formação ST6?
             </p>
           </div>
           <div
@@ -1738,7 +1759,7 @@
                       <p
                         class="font-proximaNova text-body16 text-white font-semibold"
                       >
-                        1.997,00
+                        3.997,00
                       </p>
                     </div>
                   </li>
@@ -1764,24 +1785,6 @@
                     <p
                       class="font-proximaNova text-body16 text-white font-semibold"
                     >
-                      Estratégias Automatizadas
-                    </p>
-                    <div class="flex items-center gap-1">
-                      <span
-                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
-                        >R$</span
-                      >
-                      <p
-                        class="font-proximaNova text-body16 text-white font-semibold"
-                      >
-                        1.997,00
-                      </p>
-                    </div>
-                  </li>
-                  <li class="w-full flex items-center justify-between">
-                    <p
-                      class="font-proximaNova text-body16 text-white font-semibold"
-                    >
                       Indicadores Premium
                     </p>
                     <div class="flex items-center gap-1">
@@ -1800,7 +1803,7 @@
                     <p
                       class="font-proximaNova text-body16 text-white font-semibold"
                     >
-                      Protocolo Thorp
+                      Estratégias Automatizadas
                     </p>
                     <div class="flex items-center gap-1">
                       <span
@@ -1818,8 +1821,37 @@
                     <p
                       class="font-proximaNova text-body16 text-white font-semibold"
                     >
-                      Sistema Black S
+                      Sistema Black S.
                     </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        997,00
+                      </p>
+                    </div>
+                  </li>
+                  <li class="w-full flex items-center justify-between">
+                    <p
+                      class="font-proximaNova text-body16 text-white font-semibold"
+                    >
+                      Protocolo Thorp
+                    </p>
+                    <div class="flex items-center gap-1">
+                      <span
+                        class="font-proximaNova text-body16 text-RED_PRICE font-semibold"
+                        >R$</span
+                      >
+                      <p
+                        class="font-proximaNova text-body16 text-white font-semibold"
+                      >
+                        997,00
+                      </p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1849,7 +1881,7 @@
                 <h6
                   class="uppercase font-proximaNova text-white text-head24 leading-tight text-center"
                 >
-                  <b>ECONOMIZE</b> R$ 9.185 NA <br />
+                  <b>ECONOMIZE</b> R$ 8.485 NA <br />
                   COMPRA DO ST6
                 </h6>
               </div>
@@ -1873,13 +1905,13 @@
                     >R$</span
                   >
                   <h6 class="font-proximaNova font-bold text-white text-head48">
-                    129,70
+                    199,70
                   </h6>
                 </div>
                 <p
                   class="self-center font-proximaNova font-medium text-white text-body16"
                 >
-                  Ou R$ 1297,00 avista
+                  Ou R$ 1.997,00 à vista
                 </p>
               </div>
               <a
@@ -1948,9 +1980,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -1990,9 +2020,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2026,9 +2054,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2067,9 +2093,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2103,9 +2127,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2139,9 +2161,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2176,9 +2196,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2212,9 +2230,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2249,9 +2265,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2286,9 +2300,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2327,9 +2339,7 @@
                   ></iconify-icon>
                 </div>
               </button>
-              <div
-                class="accordion-text w-full transition-all"
-              >
+              <div class="accordion-text w-full transition-all">
                 <p
                   class="font-proximaNova font-normal text-white text-body18 mt-8"
                 >
@@ -2376,7 +2386,7 @@
             </p>
             <a
               class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-EMERALD font-proximaNova text-WHITE font-semibold max-w-[228px]"
-              href=""
+              href="https://wa.me/5511979727524"
             >
               Entrar em contato
               <iconify-icon
@@ -2391,11 +2401,9 @@
       <div class="bg-BLACK">
         <div class="container">
           <div
-            class="w-full p-8 sm:p-12 lg:py-0 lg:h-[376px] rounded-3xl bg-BLUE_500 flex justify-between"
+            class="w-full p-8 sm:p-12 rounded-3xl bg-BLUE_500 flex justify-center"
           >
-            <div
-              class="flex flex-col justify-center lg:max-w-[424px] text-center lg:text-left"
-            >
+            <div class="flex flex-col justify-center text-center">
               <h6
                 class="font-proximaNova font-semibold text-head32 text-WHITE leading-tight"
               >
@@ -2410,22 +2418,12 @@
               <div class="mt-8 flex items-center justify-center">
                 <a
                   class="py-3 max-w-[316px] w-full bg-WHITE flex justify-center items-center gap-3 rounded-lg font-proximaNova font-semibold text-BLUE_500"
-                  href=""
+                  href="#shop"
                 >
-                  Adquirir treinamento
+                  Entrar para o ST6
                   <iconify-icon icon="mdi:arrow-right"></iconify-icon>
                 </a>
               </div>
-            </div>
-            <div
-              class="relative h-[376px] max-w-[526px] w-full hidden lg:block"
-            >
-              <img
-                class="absolute bottom-0"
-                src="./assets/FOTO_TRADER.png"
-                alt=""
-                srcset=""
-              />
             </div>
           </div>
         </div>
@@ -2451,7 +2449,7 @@
 
             <a
               class="bg-WHITE py-2 px-4 rounded-lg font-proximaNova font-semibold text-BLACK"
-              href=""
+              href="https://special.sixtraders.com.br/"
               >Já sou cliente</a
             >
           </div>
@@ -2518,7 +2516,7 @@
                 <li>
                   <a
                     class="font-proximaNova font-medium text-body16 text-white"
-                    href=""
+                    href="https://www.instagram.com/rafa_avelar/"
                     ><iconify-icon
                       class="text-body20 text-white"
                       icon="mdi:instagram"
@@ -2528,40 +2526,10 @@
                 <li>
                   <a
                     class="font-proximaNova font-medium text-body16 text-white"
-                    href=""
-                    ><iconify-icon
-                      class="text-body20 text-white"
-                      icon="ri:linkedin-fill"
-                    ></iconify-icon>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="font-proximaNova font-medium text-body16 text-white"
-                    href=""
+                    href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA"
                     ><iconify-icon
                       class="text-body20 text-white"
                       icon="mdi:youtube"
-                    ></iconify-icon>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="font-proximaNova font-medium text-body16 text-white"
-                    href=""
-                    ><iconify-icon
-                      class="text-body20 text-white"
-                      icon="ri:facebook-fill"
-                    ></iconify-icon>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="font-proximaNova font-medium text-body16 text-white"
-                    href=""
-                    ><iconify-icon
-                      class="text-body20 text-white"
-                      icon="mdi:twitter"
                     ></iconify-icon>
                   </a>
                 </li>
@@ -2581,9 +2549,9 @@
               <div>
                 <a
                   class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-BLUE_500 font-proximaNova text-WHITE font-semibold"
-                  href=""
+                  href="#shop"
                 >
-                  Adquirir treinamento
+                  Entrar para o ST6
                   <iconify-icon icon="mdi:arrow-right"></iconify-icon>
                 </a>
               </div>
@@ -2605,7 +2573,7 @@
               <div>
                 <a
                   class="py-3 rounded-lg w-full flex items-center justify-center gap-3 bg-EMERALD font-proximaNova text-WHITE font-semibold"
-                  href=""
+                  href="https://wa.me/5511979727524"
                 >
                   Enviar mensagem
                   <iconify-icon
