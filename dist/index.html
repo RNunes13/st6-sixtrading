@@ -106,11 +106,13 @@
     <main>
       <section
         id="hero"
-        class="bg-hero-pattern bg-cover bg-no-repeat bg-right pt-[4.5rem] h-[100vh] min-h-[43.75rem]"
+        class="bg-hero-pattern bg-cover bg-no-repeat bg-right pt-[4.5rem] h-[100vh] min-h-[900px]"
       >
-        <div class="container flex justify-between items-center h-full">
+        <div
+          class="container flex flex-col lg:flex-row gap-8 justify-center lg:justify-between items-center h-full"
+        >
           <div
-            class="grow shrink-0 max-w-full text-center lg:max-w-[486px] lg:text-left"
+            class="lg:grow shrink-0 max-w-full text-center lg:max-w-[486px] lg:text-left"
           >
             <div class="flex items-center flex-col lg:items-start">
               <span
@@ -123,13 +125,15 @@
                 Saiba como se tornar um Special Trader 6
               </h1>
               <p
-                class="font-proximaNova text-body14 lg:text-body16 text-WHITE leading-normal mt-6 max-w-[416px]"
+                class="hidden lg:block font-proximaNova text-body14 lg:text-body16 text-WHITE leading-normal mt-6 max-w-[416px]"
               >
                 Descubra o Método Exclusivo que Transforma Operadores Iniciantes
                 em Special Traders 6.
               </p>
             </div>
-            <div class="mt-16 flex items-center flex-col w-full lg:items-start">
+            <div
+              class="hidden lg:flex mt-16 items-center flex-col w-full lg:items-start"
+            >
               <a
                 class="flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE max-w-[280px] w-full"
                 href="#shop"
@@ -142,7 +146,7 @@
               </a>
             </div>
             <a
-              class="gap-4 mt-20 flex items-center justify-center lg:justify-start"
+              class="hidden lg:flex gap-4 mt-20 items-center justify-center lg:justify-start"
               href="#about"
             >
               <div
@@ -158,25 +162,48 @@
               </p>
             </a>
           </div>
-          <div
-            class="max-w-[590px] w-full h-[350px] rounded-2xl hidden lg:block"
-          >
+          <div class="max-w-[590px] w-full lg:h-[350px] rounded-2xl lg:block">
             <iframe
-              id="hero-video"
-              width="590"
-              height="350"
-              src="https://www.youtube.com/embed/eLIcD9v1epU?si=f8Bn4XICIuAhj_HO&controls=0&autoplay=1&rel=0"
-              title="YouTube video player"
               frameborder="0"
-              allow="autoplay; encrypted-media; gyroscope; picture-in-picture;"
+              class="w-full h-[300px] lg:h-[350px]"
+              src="https://www.youtube.com/embed/eLIcD9v1epU?rel=0&mute=1&autoplay=1&modestbranding=1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
               allowfullscreen
             ></iframe>
-
             <p
               class="font-proximaNova text-white text-body14 font-medium pt-3 text-center"
             >
               Assista à Apresentação em Vídeo
             </p>
+
+            <div class="lg:hidden mt-12 flex items-center flex-col w-full">
+              <a
+                class="flex justify-center items-center gap-3 px-4 py-3 bg-BLUE_500 rounded-lg font-proximaNova font-semibold text-WHITE max-w-[280px] w-full"
+                href="#shop"
+              >
+                Entrar para o ST6
+                <iconify-icon
+                  class="opacity-40"
+                  icon="bx:right-arrow-alt"
+                ></iconify-icon>
+              </a>
+            </div>
+            <a
+              class="lg:hidden gap-4 mt-10 flex items-center justify-center"
+              href="#about"
+            >
+              <div
+                class="h-8 w-8 rounded-full border-[1px] border-GRAY_300 grid place-content-center"
+              >
+                <iconify-icon
+                  class="text-white"
+                  icon="bx:down-arrow-alt"
+                ></iconify-icon>
+              </div>
+              <p class="font-proximaNova text-GRAY_300 text-body14 font-medium">
+                Deslize para baixo e descubra mais.
+              </p>
+            </a>
           </div>
         </div>
       </section>
@@ -263,7 +290,9 @@
 
       <section id="methodology" class="w-full py-[80px] lg:py-[130px] bg-BLACK">
         <div class="container flex flex-wrap flex-col md:flex-row">
-          <p class="font-proximaNova font-semibold text-BLUE_500 text-head24 grow">
+          <p
+            class="font-proximaNova font-semibold text-BLUE_500 text-head24 grow"
+          >
             Uma metodologia única para aprender e aplicar.
           </p>
 
@@ -1579,7 +1608,9 @@
                       icon="mdi:instagram"
                     ></iconify-icon>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA">
+                  <a
+                    href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA"
+                  >
                     <iconify-icon
                       class="text-body18 text-white"
                       icon="mdi:youtube"
