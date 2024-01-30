@@ -59,6 +59,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/assets/hero-bg.png')",
+        "youtube-placeholder": "url('/assets/youtube-placeholder.svg')",
       },
     },
   },

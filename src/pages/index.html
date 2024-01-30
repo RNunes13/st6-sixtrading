@@ -6,6 +6,7 @@
     <title>Treinamento ST6 | Six Trading</title>
     <link rel="stylesheet" href="https://use.typekit.net/qrl2xze.css" />
     <link rel="stylesheet" href="/styles.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -23,7 +24,11 @@
           </a>
         </div>
 
-        <button id="menu-btn" class="flex items-center lg:hidden">
+        <button
+          id="menu-btn"
+          class="flex items-center lg:hidden"
+          aria-label="menu"
+        >
           <iconify-icon
             icon="bx:menu"
             width="32"
@@ -106,7 +111,7 @@
     <main>
       <section
         id="hero"
-        class="bg-hero-pattern bg-cover bg-no-repeat bg-right pt-[4.5rem] h-[100vh] min-h-[900px]"
+        class="bg-hero-pattern bg-cover bg-no-repeat bg-right pt-[4.5rem] h-[100vh] min-h-[700px]"
       >
         <div
           class="container flex flex-col lg:flex-row gap-8 justify-center lg:justify-between items-center h-full"
@@ -163,13 +168,23 @@
             </a>
           </div>
           <div class="max-w-[590px] w-full lg:h-[350px] rounded-2xl lg:block">
-            <iframe
-              frameborder="0"
-              class="w-full h-[300px] lg:h-[350px]"
-              src="https://www.youtube.com/embed/eLIcD9v1epU?rel=0&mute=1&autoplay=1&modestbranding=1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowfullscreen
-            ></iframe>
+            <div class="relative w-full bg-youtube-placeholder bg-[50%] bg-cover pt-[50%] lg:pt-[60%] rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/eLIcD9v1epU?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+                frameborder="0"
+                style="
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  pointer-events: auto;
+                "
+                allow="autoplay; encrypted-media"
+                title="A Rota da Consistência de Lucro no Day Trade!"
+                allowfullscreen=""
+              ></iframe>
+            </div>
             <p
               class="font-proximaNova text-white text-body14 font-medium pt-3 text-center"
             >
@@ -454,11 +469,11 @@
               class="font-proximaNova text-BLUE_500 text-body14 font-semibold uppercase"
               >tomada de ação para o sucesso</span
             >
-            <h3
+            <h2
               class="text-center font-proximaNova text-head32 lg:text-head40 text-white font-semibold max-w-[606px] mt-4"
             >
               A todo momento, você é bombardeado por anúncios como
-            </h3>
+            </h2>
           </div>
           <div
             class="w-full max-w-[864px] mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start mt-12"
@@ -863,12 +878,12 @@
             </div>
 
             <div class="flex flex-col items-center mt-16">
-              <h5
+              <h2
                 class="text-center max-w-[424px] font-proximaNova font-semibold text-white text-head32"
               >
                 Para ter lucros e resultados assim você
                 <span class="text-RED_500">não precisa:</span>
-              </h5>
+              </h2>
 
               <div
                 class="flex flex-col md:flex-row justify-center gap-8 mt-12 w-full"
@@ -1602,7 +1617,10 @@
                   CNPI-P - Especialista em trade e investidor
                 </p>
                 <div class="flex gap-4 items-center mt-8">
-                  <a href="https://www.instagram.com/rafa_avelar/">
+                  <a
+                    href="https://www.instagram.com/rafa_avelar/"
+                    aria-label="Instagram"
+                  >
                     <iconify-icon
                       class="text-body18 text-white"
                       icon="mdi:instagram"
@@ -1610,6 +1628,7 @@
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA"
+                    aria-label="YouTube"
                   >
                     <iconify-icon
                       class="text-body18 text-white"
@@ -1909,12 +1928,12 @@
                 </div>
               </div>
               <div class="mt-12">
-                <h6
+                <h2
                   class="uppercase font-proximaNova text-white text-head24 leading-tight text-center"
                 >
                   <b>ECONOMIZE</b> R$ 8.485 NA <br />
                   COMPRA DO ST6
-                </h6>
+                </h2>
               </div>
             </div>
             <div class="max-w-[416px] w-full flex flex-col items-center">
@@ -2435,11 +2454,11 @@
             class="w-full p-8 sm:p-12 rounded-3xl bg-BLUE_500 flex justify-center"
           >
             <div class="flex flex-col justify-center text-center">
-              <h6
+              <h2
                 class="font-proximaNova font-semibold text-head32 text-WHITE leading-tight"
               >
                 A hora de se tornar um Special Trader 6 é agora.
-              </h6>
+              </h2>
               <p
                 class="font-proximaNova font-medium text-body18 text-WHITE mt-4"
               >
@@ -2548,6 +2567,7 @@
                   <a
                     class="font-proximaNova font-medium text-body16 text-white"
                     href="https://www.instagram.com/rafa_avelar/"
+                    aria-label="Instagram"
                     ><iconify-icon
                       class="text-body20 text-white"
                       icon="mdi:instagram"
@@ -2558,6 +2578,7 @@
                   <a
                     class="font-proximaNova font-medium text-body16 text-white"
                     href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA"
+                    aria-label="YouTube"
                     ><iconify-icon
                       class="text-body20 text-white"
                       icon="mdi:youtube"
@@ -2656,6 +2677,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="/bundle.js"></script>
   </body>
 </html>

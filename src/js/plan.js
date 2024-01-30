@@ -87,7 +87,7 @@ export default function Plan() {
   plan_steps.forEach((step) => {
     const tabButton = document.createElement("button");
 
-    tabButton.setAttribute("id", "tab");
+    tabButton.setAttribute("id", `tab-${step.idx}`);
     tabButton.setAttribute("class", "flex items-center gap-4 ");
     tabButton.setAttribute("data-idx", step.idx); // Set a data attribute for the index
 
@@ -103,6 +103,8 @@ export default function Plan() {
     `;
 
     const tabButtonMobile = tabButton.cloneNode(true);
+
+    tabButtonMobile.setAttribute("id", `tab-mobile-${step.idx}`);
 
     tabContainer.appendChild(tabButton);
     mobileTabContainer.appendChild(tabButtonMobile);
